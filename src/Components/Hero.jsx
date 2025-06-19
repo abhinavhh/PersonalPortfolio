@@ -1,22 +1,28 @@
 import React from 'react'
 import profile from '../assets/Me.png'
-import gradient from '../assets/Gradient.png'
 const Hero = () => {
   return (
-    <section className=" dark:bg-gray-900 flex items-center justify-center">
-        <div className="flex flex-col-reverse items-center justify-between max-w-screen-xl px-4 py-8 md:flex-row">
-            <div className="place-self-center lg:col-span-7">
-                <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Hello! <br />I am <span className='text-cyan-600'>Abhinav Anil</span></h1>
-                <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">I'm a FullStack Developer</p>
+    <section id="home" className="mt-16 px-12 flex items-center justify-around flex-col-reverse md:flex-row">
+        <div className='flex justify-start flex-col'>
+            <div className="lg:flex gap-2 font-bold text-5xl leading-tight">
+                <h1>
+                 Hello!
+                </h1>
+                <h1>I' m <span className='text-blue-900'>Abhinav Anil</span>
+                </h1>
             </div>
+            <p className='text-xl font-normal'>Full Stack Developer</p>
+        </div>
+        <div>
             <div 
                 // style={{backgroundImage:`url(${gradient})`}}
-                className="flex items-center justify-center md:bg-transparent mb-6">
+                >
                 <img 
                     src={profile} 
                     alt="profile"
+                    className='md:w-[400px] h-auto mx-auto object-contain'
                 />
-            </div>                
+            </div> 
         </div>
     </section>
   )

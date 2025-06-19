@@ -9,10 +9,10 @@ export default defineConfig({
   theme: {
     extend: {
       colors: {
-        primary: "#0c1222",
+        primaryText: "#000000",
       },
       fontFamily: {
-        code: ["Fira Code", "sans-serif"],
+        code: ["Inter", "sans-serif"],
       },
     }
   }
