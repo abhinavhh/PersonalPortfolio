@@ -6,9 +6,9 @@ const Hero = () => {
         <div className='flex justify-start flex-col'>
             <div className="lg:flex gap-2 font-bold text-5xl leading-tight">
                 <h1>
-                 Hello!
+                 Hello,
                 </h1>
-                <h1>I' m <span className='text-blue-900'>Abhinav Anil</span>
+                <h1>This is <span className='text-blue-900'>Abhinav Anil</span>
                 </h1>
             </div>
             <p className='text-xl font-normal'>Full Stack Developer</p>
@@ -20,7 +20,7 @@ const Hero = () => {
                 <img 
                     src={profile} 
                     alt="profile"
-                    className='md:w-[400px] h-auto mx-auto object-contain'
+                    className='h-auto mx-auto object-contain'
                 />
             </div> 
         </div>
