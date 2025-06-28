@@ -12,7 +12,7 @@ const Hero = () => {
     <section id='home' className='mt-16 flex flex-col-reverse justify-center items-center md:flex-row md:gap-12 overflow-x-hidden px-4'>
         <div className="flex flex-col items-center gap-4 md:items-start">
             <div className="mt-6 text-justify flex flex-col gap-2 text-base">
-                <h1 className='text-5xl flex gap-6 md:flex-col font-bold'>
+                <h1 className='text-5xl flex gap-3 md:flex-col font-bold'>
                     Hey, <span className='text-5xl font-bold text-blue-800'>
                             I'm Abhinav
                         </span>
