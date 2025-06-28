@@ -10,18 +10,19 @@ const Hero = () => {
     }
   return (
     <section id='home'
-        className='mt-16 p-12 flex flex-col-reverse justify-center items-center md:flex-row gap-10 lg:justify-around lg:px-2'
+        className='mt-16 flex flex-col-reverse justify-center items-center md:flex-row gap-10 lg:justify-around lg:px-2'
     >
         <div className="flex flex-col justify-center items-center gap-4 md:items-start">
-            <div className="mt-6 text-justify px-6 items-center">
-                <h1 className='text-3xl flex flex-col font-bold'>
+            <div className="mt-6 text-justify items-center">
+                <h1 className='text-5xl flex items-center ml-4 gap-4 md:flex-col font-bold'>
                     Hi, <span className='text-5xl font-bold text-blue-800'>
                             I'm Abhinav
                         </span>
-                    <p className='text-base'>
-                        B.Tech 2025 graduate passionate about crafting efficient software solutions.
-                    </p>
+                   
                 </h1>
+                <p className='text-base font-bold'>
+                        B.Tech 2025 graduate passionate about crafting efficient software solutions.
+                </p>
                 Full-Stack Developer | Problem Solver | Tech Enthusiast
             </div>
             <div className='flex items-center justify-center gap-4 md:ml-6'>
