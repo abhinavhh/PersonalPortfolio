@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="flex flex-col items-center gap-4 md:items-start">
             <div className="mt-6 text-justify flex flex-col gap-2 text-base">
                 <h1 className='text-5xl flex gap-6 md:flex-col font-bold'>
-                    Hello, <span className='text-5xl font-bold text-blue-800'>
+                    Hey, <span className='text-5xl font-bold text-blue-800'>
                             I'm Abhinav
                         </span>
                    
