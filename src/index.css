@@ -4,3 +4,6 @@
     font-family:sans-serif;
     padding: 1em 1em;
 }
+body{
+    overflow-x: hidden;
+}
