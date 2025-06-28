@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-0 px-12 py-6 bg-white">
-      <nav className="flex justify-between">
+    <div className="fixed top-0 right-0 left-0 z-50 px-12 py-6 bg-white">
+      <nav className="flex justify-between lg:justify-around">
         {/* Logo + Menu Toggle */}
         <h1 className="text-xl font-bold">Abhinav</h1>
         <div className="flex items-center space-x-2 md:hidden">
@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex items-center space-x-6 ">
+        <ul className="hidden md:flex items-center space-x-6 lg:gap-10">
           {['home', 'about','projects','education','contact'].map((sec) => (
             <li
               key={sec}
