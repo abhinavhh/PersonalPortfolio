@@ -12,10 +12,10 @@ const Hero = () => {
     <section id='home'
         className='mt-16 flex flex-col-reverse justify-center items-center md:flex-row gap-10 lg:justify-around lg:px-2'
     >
-        <div className="flex flex-col justify-center items-center gap-4 md:items-start">
-            <div className="mt-6 text-justify items-center">
-                <h1 className='text-5xl flex items-center ml-4 gap-4 md:flex-col font-bold'>
-                    Hi, <span className='text-5xl font-bold text-blue-800'>
+        <div className="flex flex-col items-center gap-4 md:items-start">
+            <div className="mt-6 text-justify flex flex-col gap-2 text-base">
+                <h1 className='text-5xl flex gap-6 md:flex-col font-bold'>
+                    Hello, <span className='text-5xl font-bold text-blue-800'>
                             I'm Abhinav
                         </span>
                    
@@ -42,7 +42,7 @@ const Hero = () => {
         <div className="lg:mr-12">
             <img src={heroImage} 
             alt="image"
-            className="md:w-[300px] lg:w-[350px]"
+            className="mt-6 md:w-[300px] lg:w-[350px]"
             />
         </div>
     </section>
