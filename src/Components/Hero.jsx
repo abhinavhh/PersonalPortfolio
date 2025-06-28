@@ -10,7 +10,7 @@ const Hero = () => {
     }
   return (
     <section id='home'
-        className='mt-16 flex flex-col-reverse justify-center items-center md:flex-row gap-10 lg:justify-around lg:px-2'
+        className='mt-16 flex flex-col-reverse justify-center items-center md:flex-row md:gap-12'
     >
         <div className="flex flex-col items-center gap-4 md:items-start">
             <div className="mt-6 text-justify flex flex-col gap-2 text-base">
@@ -39,7 +39,7 @@ const Hero = () => {
                 </button>
             </div>
         </div>
-        <div className="lg:mr-12">
+        <div className="md:ml-4">
             <img src={heroImage} 
             alt="image"
             className="mt-6 md:w-[300px] lg:w-[350px]"
