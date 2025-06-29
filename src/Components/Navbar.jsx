@@ -3,6 +3,7 @@ import { useTheme } from "../context/ThemeContext";
 import { Code2, Menu, Moon, Sun, X } from "lucide-react";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
+import logo_image from "../../assets/file_00000000917861f89f39aafdf5ced379.png"
 
 const Navbar = () => {
   const { isDarkMode, toggleDarkMode } = useTheme();
@@ -27,7 +28,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2">
-          <Code2 size={24} className="text-blue-500"/>
+          <img src={logo_img} width={24}/>
           <span className="text-lg ml-1">ABHINAV</span>
         </motion.div>
 
