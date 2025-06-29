@@ -1,21 +1,16 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,416;1,14..32,416&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-@theme {
-    --font-display: "Urbanist", sans-serif;
+:root {
+  --font-display: "Urbanist", sans-serif;
 }
-@layer base {
-    html{
-        font-family: var(--font-display);
-    }
-    #root{
-    color: black;
-    font-family:sans-serif;
-    padding: 1em 1em;
-    }
-    body{
-        background-color: #000000;
-        overflow: hidden;
-    }
 
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+  body {
+    background-color: #000000;
+    overflow: hidden;
+  }
 }
 

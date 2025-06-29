@@ -1,64 +1,119 @@
-import React, { useState } from 'react';
-import DehazeOutlinedIcon from '@mui/icons-material/DehazeOutlined';
-import IconButton from '@mui/material/IconButton';
-
+import { useState } from "react";
+import { useTheme } from "../context/ThemeContext";
+import { Code2, Menu, Moon, Sun, X } from "lucide-react";
+import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion"
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const { isDarkMode, toggleDarkMode } = useTheme();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const onScrollclick = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    setMenuOpen(false);
+  const ScrolltoSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsMenuOpen(false);
+    }
   };
 
   return (
-    <div className="fixed top-0 right-0 left-0 z-50 px-12 py-6 bg-white">
-      <nav className="flex justify-between md:justify-around">
-        {/* Logo + Menu Toggle */}
-        <h1 className="text-xl font-bold">Abhinav</h1>
-        <div className="flex items-center space-x-2 md:hidden">
-          {/* Use IconButton for better hit area and accessibility */}
-          <IconButton
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu" 
-            size="large"
-            color='secondary'
+    <motion.nav
+      style={{ opacity: 1 }}
+      className={`fixed top-0 w-full z-50 px-6 py-4 ${
+        isDarkMode ? "bg-gray-950/80" : "bg-gray-50/80"
+      } backdrop-blur-md border-b ${
+        isDarkMode ? "border-gray-800" : "border-gray-200"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2">
+          <Code2 size={24} className="text-blue-500"/>
+          <span className="text-lg ml-1">Time to program</span>
+        </motion.div>
+
+        {/* Dektop Navigation */}
+
+        <div className="hidden md:flex space-x-8 items-center">
+          {["Home", "Skills", "About", "Work", "Contact"].map((item) => (
+            <motion.button
+              key={item}
+              whileHover={{ y: -2 }}
+              onClick={() => ScrolltoSection(item.toLowerCase())}
+              className="text-sm font-medium"
+            >
+              {item}
+            </motion.button>
+          ))}
+
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => toggleDarkMode(isDarkMode ? "light" : "dark")}
+            className={`p-2 rounded-full transition-colors ${
+              isDarkMode
+                ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+            }`}
           >
-            <DehazeOutlinedIcon fontSize="inherit" />
-          </IconButton>
-          
+            {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
+          </motion.button>
         </div>
 
-        {/* Desktop Links */}
-        <ul className="hidden md:flex items-center space-x-6 lg:gap-10">
-          {['home', 'about','projects','education','contact'].map((sec) => (
-            <li
-              key={sec}
-              onClick={() => onScrollclick(sec)}
-              className="relative cursor-pointer group transition-transform duration-300 hover:scale-105 hover:text-blue-700"
-            >
-              {sec.charAt(0).toUpperCase() + sec.slice(1)}
-              <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
-            </li>
-            
-          ))}
-        </ul>
-      </nav>
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex items-center space-x-4">
+          <motion.button
+            whileHover={{scale:1.05}}
+            whileTap={{scale: 0.95}}
+            onClick={() => toggleDarkMode(isDarkMode? "light": "dark")}
+            className={`p-2 rounded-full transition-colors ${
+              isDarkMode? "text-gray-400 hover:text-white hover:bg-gray-800"
+              : "text-gray-500 hover:text-gray-900 hover:bg=gray-200"
+            }`}
+          >
+            {isDarkMode  ? <Sun size={18} /> : <Moon size={18} />}
+          </motion.button>
+          <motion.button
+            whileHover={{scale:1.05}}
+            whileTap={{scale: 0.95}}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className={`p-2 rounded-full transition-colors ${
+              isDarkMode? "text-gray-400 hover:text-white hover:bg-gray-800"
+              : "text-gray-500 hover:text-gray-900 hover:bg=gray-200"
+            }`}
+          >
+            {isMenuOpen ? <X size={20} /> : <Menu size={20}/>}
+          </motion.button>
+        </div>
+      </div>
 
-      {/* Mobile Dropdown */}
-      {menuOpen && (
-        <ul className="absolute left-80 right-0 top-0 pt-10 flex flex-col border-2 border-b-fuchsia-950  md:hidden px-5 pb-4 shadow-md space-y-3">
-          {['home','about','projects','education','contact'].map((sec) => (
-            <li
-              key={sec}
-              onClick={() => onScrollclick(sec)}
-              className="cursor-pointer hover:text-blue-600"
-            >
-              {sec.charAt(0).toUpperCase() + sec.slice(1)}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isMenuOpen && <motion.div
+            initial={{ opacity: 0, y: -20}}
+            animate={{ opacity: 1, y: 0}}
+            exit={{ opacity: 0, y: -20}}
+            className={`md:hidden mt-4 p-4 rounded-lg ${
+              isDarkMode? "bg-gray-900" : "bg-white"
+            } border ${isDarkMode? "border-gray-800" : "border-gray-200"}`}
+          >
+            {["Home", "Skills", "Work", "About", "Contact"].map((item) => (
+              <motion.button
+                key={item}
+                whileHover={{x : 5 }}
+                onClick={() => ScrolltoSection(item.toLowerCase())}
+                className={`block w-full text-left py-2 text-sm uppercase tracking-wider transition-colors ${
+                  isDarkMode? "text-gray-40 hover:text-white"
+                  : "text-gray-600 hover:text-gray-900"
+                }`}
+              >
+                {item}
+              </motion.button>
+            ))}
+          </motion.div>
+          
+        }
+      </AnimatePresence>
+    </motion.nav>
   );
-}
+};
+
 export default Navbar;
