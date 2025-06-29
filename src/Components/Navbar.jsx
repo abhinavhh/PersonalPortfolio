@@ -92,7 +92,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20}}
             animate={{ opacity: 1, y: 0}}
             exit={{ opacity: 0, y: -20}}
-            className={`md:hidden mt-4 p-4 rounded-lg ${
+            className={`md:hidden mt-4 p-4 rounded-lg relative left-3/5 ${
               isDarkMode? "bg-gray-900" : "bg-white"
             } border ${isDarkMode? "border-gray-800" : "border-gray-200"}`}
           >
@@ -101,7 +101,7 @@ const Navbar = () => {
                 key={item}
                 whileHover={{x : 5 }}
                 onClick={() => ScrolltoSection(item.toLowerCase())}
-                className={`block w-full text-left py-2 text-sm uppercase tracking-wider transition-colors ${
+                className={`w-full text-left py-2 text-sm uppercase tracking-wider transition-colors ${
                   isDarkMode? "text-gray-40 hover:text-white"
                   : "text-gray-600 hover:text-gray-900"
                 }`}
