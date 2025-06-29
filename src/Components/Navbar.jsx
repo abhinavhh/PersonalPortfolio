@@ -3,7 +3,7 @@ import { useTheme } from "../context/ThemeContext";
 import { Code2, Menu, Moon, Sun, X } from "lucide-react";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
-import logo_image from "../../assets/file_00000000917861f89f39aafdf5ced379.png"
+import logo_img from "../../assets/file_00000000917861f89f39aafdf5ced379.png"
 
 const Navbar = () => {
   const { isDarkMode, toggleDarkMode } = useTheme();
