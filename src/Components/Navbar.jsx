@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2">
-          <img src={logo_img} width={24}/>
+          <img src={logo_img} width={40}/>
           <span className="text-lg ml-1">ABHINAV</span>
         </motion.div>
 
