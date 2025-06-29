@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { Code2, Menu, Moon, Sun, X } from "lucide-react";
 import { AnimatePresence } from "framer-motion";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+
 const Navbar = () => {
   const { isDarkMode, toggleDarkMode } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
     <motion.nav
       style={{ opacity: 1 }}
       className={`fixed top-0 w-full z-50 px-6 py-4 ${
-        isDarkMode ? "bg-gray-950/80" : "bg-gray-50/80"
+        isDarkMode ? "bg-gray-950/80 text-gray-400" : "bg-gray-50/80"
       } backdrop-blur-md border-b ${
         isDarkMode ? "border-gray-800" : "border-gray-200"
       }`}
@@ -27,13 +28,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2">
           <Code2 size={24} className="text-blue-500"/>
-          <span className="text-lg ml-1">Time to program</span>
+          <span className="text-lg ml-1">ABHINAV</span>
         </motion.div>
 
         {/* Dektop Navigation */}
 
         <div className="hidden md:flex space-x-8 items-center">
-          {["Home", "Skills", "About", "Work", "Contact"].map((item) => (
+          {["Home", "Skills", "Work", "About", "Contact"].map((item) => (
             <motion.button
               key={item}
               whileHover={{ y: -2 }}
