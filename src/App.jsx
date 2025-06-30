@@ -10,8 +10,8 @@ const App = () => {
       <ThemeProvider>
         {/* <div className="relative h-full w-full"> */}
           <Navbar />
-          {/* <Hero />
-          <About />
+          <Hero />
+          {/* <About />
           <Projects />
           <HomePage /> */}
         {/* </div> */}
