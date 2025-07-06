@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Download, Mail, Github, Linkedin } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
-import hero_img from "../assets/file_00000000558c61f7b861af9d96138b1a.png"
+import hero_img from "../assets/Me.png"
 
 const Hero = () => {
   const { isDarkMode }= useTheme();
@@ -68,7 +68,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`min-h-screen flex items-center justify-center relative ${
+      className={`min-h-screen flex items-center justify-center relative md:mt-6 ${
         isDarkMode ? "bg-gray-950 text-white" : "bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900"
       }`}
     >

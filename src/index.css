@@ -9,7 +9,7 @@
     font-family: var(--font-display);
   }
   body {
-    overflow: hidden;
+    
     background-color: black;
   }
 }

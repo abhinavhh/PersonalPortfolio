@@ -11,9 +11,9 @@ const App = () => {
         {/* <div className="relative h-full w-full"> */}
           <Navbar />
           <Hero />
-          {/* <About />
+          <About />
           <Projects />
-          <HomePage /> */}
+          <HomePage />
         {/* </div> */}
       </ThemeProvider>
   )
