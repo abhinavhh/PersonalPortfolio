@@ -14,7 +14,7 @@ const App = () => {
           <About />
           {/*<Projects />
           <HomePage /> */}
-         {*/ </div> */}
+         {/* </div> */}
       </ThemeProvider>
   )
 }
