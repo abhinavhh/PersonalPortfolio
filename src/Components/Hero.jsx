@@ -174,7 +174,6 @@ const Hero = () => {
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a
   href="../assets/ABHINAV U (5).pdf"
-  download="Abhinav_U_Resume.pdf"
   className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transition-shadow"
 >
   <Download size={20} />
@@ -196,7 +195,7 @@ const Hero = () => {
 
             <motion.div variants={itemVariants} className="flex justify-center space-x-6 mb-12">
               {[
-                { icon: Github, href: "https://github/abhinavhh", label: "GitHub" },
+                { icon: Github, href: "https://github.com/abhinavhh", label: "GitHub" },
                 { icon: Linkedin, href: "https://www.linkedin.com/in/abhinav-u-212b64286", label: "LinkedIn" },
               ].map((social, index) => (
                 <motion.a
