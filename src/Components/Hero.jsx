@@ -173,7 +173,7 @@ const Hero = () => {
 
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a
-  href="../assets/resume.pdf"
+  href="../assets/ABHINAV U (5).pdf"
   download="Abhinav_U_Resume.pdf"
   className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transition-shadow"
 >
