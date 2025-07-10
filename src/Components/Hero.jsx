@@ -172,34 +172,32 @@ const Hero = () => {
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <motion.button
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transition-shadow"
-              >
-                <Download size={20} />
-                <span>Download Resume</span>
-              </motion.button>
+              <a
+  href="../assets/resume.pdf"
+  download="Abhinav_U_Resume.pdf"
+  className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transition-shadow"
+>
+  <Download size={20} />
+  <span>Download Resume</span>
+</a>
 
-              <motion.button
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className={`px-8 py-4 rounded-full font-semibold flex items-center justify-center space-x-2 border-2 transition-colors ${
-                  isDarkMode
-                    ? "border-gray-700 text-gray-300 hover:border-gray-600 hover:bg-gray-800"
-                    : "border-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-50"
-                }`}
-              >
-                <Mail size={20} />
-                <span>Get In Touch</span>
-              </motion.button>
+             <a
+  href="mailto:abhinavanil1830@gmail.com"
+  className={`px-8 py-4 rounded-full font-semibold flex items-center justify-center space-x-2 border-2 transition-colors ${
+    isDarkMode
+      ? "border-gray-700 text-gray-300 hover:border-gray-600 hover:bg-gray-800"
+      : "border-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-50"
+  }`}
+>
+  <Mail size={20} />
+  <span>Get In Touch</span>
+</a>
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex justify-center space-x-6 mb-12">
               {[
-                { icon: Github, href: "#", label: "GitHub" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                { icon: Mail, href: "#", label: "Email" }
+                { icon: Github, href: "https://github/abhinavhh", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/abhinav-u-212b64286", label: "LinkedIn" },
               ].map((social, index) => (
                 <motion.a
                   key={social.label}
