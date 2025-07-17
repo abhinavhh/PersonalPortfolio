@@ -17,6 +17,7 @@ import {
   Layers
 } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
+import bhubimage from "../assets/Screenshot 2025-07-17 142406.png";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -37,17 +38,17 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "BHUB- Book Uploading and Reading Platform",
       category: "fullstack",
-      description: "A modern e-commerce platform with real-time inventory management, secure payment processing, and admin dashboard. Built with React, Node.js, and PostgreSQL.",
+      description: "A modern book uploading and reading platform for book enthusias which have role based access to the pages.",
       longDescription: "Comprehensive e-commerce solution featuring user authentication, product catalog, shopping cart, order management, and payment integration. Includes admin panel for inventory management and analytics.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redux", "Express"],
-      image: "/api/placeholder/600/400",
-      demoUrl: "https://demo-ecommerce.com",
+      technologies: ["PHP", "HTML", "MySQL", "CSS", "JavaScript"],
+      demoUrl: "https://bhub.fwh.is",
       githubUrl: "https://github.com/username/ecommerce",
+      image: bhubimage,
       date: "2024",
       status: "Completed",
-      highlights: ["Real-time inventory", "Payment integration", "Admin dashboard", "Responsive design"]
+      highlights: ["User Engagement", "Integrated design", "Admin dashboard", "Responsive design"]
     },
     {
       id: 2,
@@ -192,8 +193,9 @@ const Projects = () => {
     >
       {/* Project Image */}
       <div className="relative h-48 overflow-hidden">
+        <img src={project.image} alt={project.title} />
         <div className={`w-full h-full bg-gradient-to-br ${
-          index % 6 === 0 ? "from-blue-500 to-purple-600" :
+          index % 6 === 0 ? bhubimage :
           index % 6 === 1 ? "from-green-500 to-blue-600" :
           index % 6 === 2 ? "from-purple-500 to-pink-600" :
           index % 6 === 3 ? "from-orange-500 to-red-600" :
