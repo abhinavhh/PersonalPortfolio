@@ -35,7 +35,7 @@ const Navbar = () => {
         {/* Dektop Navigation */}
 
         <div className="hidden md:flex space-x-8 items-center">
-          {["Home", "Skills", "Work", "About", "Contact"].map((item) => (
+          {["Home", "Skills", "Projects", "About", "Contact"].map((item) => (
             <motion.button
               key={item}
               whileHover={{ y: -2 }}
