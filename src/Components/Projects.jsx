@@ -21,7 +21,7 @@ import { useTheme } from "../context/ThemeContext";
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
-  const [hoveredProject, setHoveredProject] = useState(null);
+  // const [hoveredProject, setHoveredProject] = useState(null);
 
   // Mock theme context - replace with your actual theme context
   const { isDarkMode } = useTheme();
@@ -140,17 +140,17 @@ const Projects = () => {
     }
   };
 
-  const itemVariants = {
-    hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut"
-      }
-    }
-  };
+  // const itemVariants = {
+  //   hidden: { y: 50, opacity: 0 },
+  //   visible: {
+  //     y: 0,
+  //     opacity: 1,
+  //     transition: {
+  //       duration: 0.8,
+  //       ease: "easeOut"
+  //     }
+  //   }
+  // };
 
   const cardVariants = {
     hidden: { 
@@ -184,8 +184,6 @@ const Projects = () => {
       animate="visible"
       exit="exit"
       layout
-      onMouseEnter={() => setHoveredProject(project.id)}
-      onMouseLeave={() => setHoveredProject(null)}
       className={`group relative overflow-hidden rounded-xl border transition-all duration-300 ${
         isDarkMode
           ? "bg-gray-900/50 border-gray-700 hover:border-gray-600"
@@ -447,7 +445,7 @@ const Projects = () => {
             { label: "Technologies Used", value: "15+", icon: Tag },
             { label: "Lines of Code", value: "10k+", icon: Github },
             { label: "Hours Coding", value: "500+", icon: Calendar }
-          ].map((stat, index) => (
+          ].map((stat) => (
             <motion.div
               key={stat.label}
               whileHover={{ scale: 1.05, y: -5 }}

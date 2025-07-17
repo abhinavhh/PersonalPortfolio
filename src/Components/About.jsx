@@ -141,7 +141,7 @@ const About = () => {
               { icon: Coffee, label: "Dedication", desc: "Committed to continuous learning" },
               { icon: Target, label: "Precision", desc: "Attention to detail in every project" },
               { icon: Trophy, label: "Excellence", desc: "Striving for quality in all work" }
-            ].map((item, index) => (
+            ].map((item) => (
               <motion.div
                 key={item.label}
                 variants={itemVariants}
@@ -172,11 +172,11 @@ const About = () => {
       animate="visible"
       className="space-y-8"
     >
-      {skills.map((skillGroup, groupIndex) => (
+      {skills.map((skillGroup) => (
         <motion.div key={skillGroup.category} variants={itemVariants} className="space-y-4">
           <h3 className="text-xl font-bold text-blue-500 mb-4">{skillGroup.category}</h3>
           <div className="grid gap-4">
-            {skillGroup.technologies.map((tech, techIndex) => (
+            {skillGroup.technologies.map((tech) => (
               <div key={tech.name} className="space-y-2">
                 <div className="flex justify-between items-center">
                   <span className="font-medium">{tech.name}</span>
@@ -210,7 +210,7 @@ const About = () => {
     >
       <div className="relative">
         <div className={`absolute left-6 top-0 h-full w-0.5 ${isDarkMode ? "bg-gray-700" : "bg-gray-300"}`} />
-        {journey.map((item, index) => (
+        {journey.map((item) => (
           <motion.div
             key={item.year}
             variants={itemVariants}
@@ -274,7 +274,7 @@ const About = () => {
             description: "Eventually become a mentor to other aspiring developers, sharing knowledge and helping them grow in their careers.",
             icon: BookOpen
           }
-        ].map((goal, index) => (
+        ].map((goal) => (
           <motion.div
             key={goal.title}
             variants={itemVariants}
