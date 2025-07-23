@@ -96,7 +96,7 @@ const Projects = () => {
     {
       id: 5,
       title: "Metro Ticket Booking System",
-      category: "Mern Stack",
+      category: "fullstack",
       description: "A simple to use metro ticket booking system with features like ticket booking, entering and exiting stations, and price calculation.",
       longDescription: "A comprehensive metro ticket booking system built with the MERN stack. Features include ticket booking, station entry and exit management, price calculation.",
       technologies: ["React", "Node.js", "Express", "MongoDB", "Mongoose"],
