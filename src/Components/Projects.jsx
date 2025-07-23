@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 import bhubimage from "../assets/Screenshot 2025-07-17 142406.png";
+import metroImage from "../assets/Screenshot 2025-07-23 173758.png";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -94,17 +95,17 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "Chat Application",
-      category: "fullstack",
-      description: "Real-time messaging application with group chats, file sharing, and message encryption for secure communication.",
-      longDescription: "Secure messaging platform with end-to-end encryption, group chat functionality, file sharing, emoji support, and message history. Includes user presence indicators and typing indicators.",
-      technologies: ["React", "Socket.io", "Node.js", "MongoDB", "JWT", "Multer"],
-      image: "/api/placeholder/600/400",
-      demoUrl: "https://demo-chat.com",
-      githubUrl: "https://github.com/username/chat",
-      date: "2023",
+      title: "Metro Ticket Booking System",
+      category: "Mern Stack",
+      description: "A simple to use metro ticket booking system with features like ticket booking, entering and exiting stations, and price calculation.",
+      longDescription: "A comprehensive metro ticket booking system built with the MERN stack. Features include ticket booking, station entry and exit management, price calculation.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Mongoose"],
+      image: metroImage,
+      demoUrl: "https://metro-ticket-system.vercel.app/",
+      githubUrl: "https://github.com/abhinavhh/metro-ticket-system",
+      date: "2025",
       status: "Completed",
-      highlights: ["End-to-end encryption", "Real-time messaging", "File sharing", "Group chats"]
+      highlights: ["Ticket booking", "Station management", "Price calculation", "Ticket validation"]
     },
     {
       id: 6,
