@@ -19,6 +19,7 @@ import {
 import { useTheme } from "../context/ThemeContext";
 import bhubimage from "../assets/Screenshot 2025-07-17 142406.png";
 import metroImage from "../assets/Screenshot 2025-07-23 173758.png";
+import todolistImage from "../assets/Screenshot 2025-07-28 115454.png"
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -45,7 +46,7 @@ const Projects = () => {
       longDescription: "Comprehensive e-commerce solution featuring user authentication, product catalog, shopping cart, order management, and payment integration. Includes admin panel for inventory management and analytics.",
       technologies: ["PHP", "HTML", "MySQL", "CSS", "JavaScript"],
       demoUrl: "https://bhub.fwh.is",
-      githubUrl: "https://github.com/username/ecommerce",
+      githubUrl: "https://github.com/abhinavhh/BHUB",
       image: bhubimage,
       date: "2024",
       status: "Completed",
@@ -53,16 +54,16 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "To Do List App",
       category: "web",
       description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
       longDescription: "Full-featured project management tool with kanban boards, real-time collaboration, file sharing, and progress tracking. Supports multiple projects and team management.",
-      technologies: ["React", "Socket.io", "MongoDB", "Express", "Tailwind CSS"],
-      image: "/api/placeholder/600/400",
-      demoUrl: "https://demo-taskmanager.com",
-      githubUrl: "https://github.com/username/taskmanager",
-      date: "2024",
-      status: "In Progress",
+      technologies: ["HTML%", "CSS3", "JavaScript"],
+      image: todolistImage,
+      demoUrl: "https://abhinavhh.github.io/front_end/todolist/",
+      githubUrl: "https://github.com/abhinavhh/front_end/tree/main/todolist",
+      date: "2023",
+      status: "Completed",
       highlights: ["Real-time collaboration", "Drag & drop", "File sharing", "Progress tracking"]
     },
     {
