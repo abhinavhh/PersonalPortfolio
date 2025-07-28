@@ -1,14 +1,25 @@
+# Personal Portfolio
 
-# React + Vite
+A modern, responsive personal portfolio website built with React, Tailwind CSS, and Framer Motion. Showcases your projects, skills, and experience with beautiful animations and a clean UI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features
 
-Currently, two official plugins are available:
+- 🖥️ Responsive design for all devices
+- 🎨 Light/Dark mode support
+- ⚡ Animated project cards and transitions
+- 🔍 Search and filter projects
+- 📦 Modular, reusable React components
+- 🌐 Live project demos and GitHub links
+- 🏷️ Technology and feature highlights
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide Icons](https://lucide.dev/)
+- [Vite](https://vitejs.dev/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Challenges Faced
+
 
