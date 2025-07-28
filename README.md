@@ -44,6 +44,9 @@ To run this project locally, follow these steps:
     ```bash
     npm run dev
     ```
-5. Open your browser and go to `http://localhost:3000` to view the portfolio.
+5. Open your browser and go to `http://localhost:5173` to view the portfolio.
+
+## Contributing
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
 
