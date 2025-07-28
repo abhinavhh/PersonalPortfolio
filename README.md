@@ -22,4 +22,6 @@ A modern, responsive personal portfolio website built with React, Tailwind CSS, 
 
 ## Challenges Faced
 
-
+- Implementing smooth animations with Framer Motion
+- Ensuring responsive design across various screen sizes
+- Optimizing performance for large project lists
