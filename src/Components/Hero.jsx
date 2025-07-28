@@ -69,7 +69,7 @@ const Hero = () => {
     <section
       id="home"
       className={`min-h-screen flex items-center justify-center relative md:mt-6 ${
-        isDarkMode ? "bg-gray-950 text-white" : "bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900"
+        isDarkMode ? "bg-gray-800 text-white" : "bg-white"
       }`}
     >
       {/* Animated Background Elements */}

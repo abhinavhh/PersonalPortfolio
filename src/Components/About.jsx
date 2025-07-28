@@ -299,8 +299,8 @@ const About = () => {
   return (
     <section
       id="about"
-      className={`min-h-screen py-20 relative ${
-        isDarkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+      className={`min-h-screen pt-20 relative ${
+        isDarkMode ? "bg-gray-800 text-white" : "bg-white text-gray-900"
       }`}
     >
       {/* Animated Background Elements */}

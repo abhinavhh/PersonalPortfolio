@@ -3,8 +3,10 @@ import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import About from './Components/About'
 import Projects from './Components/Projects'
+import Contact from './Components/Contact'
 import HomePage from './Components/HomePage'
 import { ThemeProvider } from './context/ThemeContext'
+import Footer from './Components/Footer'
 const App = () => {
   return (
       <ThemeProvider>
@@ -13,6 +15,8 @@ const App = () => {
           <Hero />
           <About />
           <Projects />
+          <Contact />
+          <Footer />
          {/* </div> */}
       </ThemeProvider>
   )

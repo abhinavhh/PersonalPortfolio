@@ -308,7 +308,7 @@ const Projects = () => {
     <section
       id="projects"
       className={`min-h-screen py-20 relative ${
-        isDarkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+        isDarkMode ? "bg-gray-800 text-white" : "bg-white text-gray-900"
       }`}
     >
       {/* Animated Background Elements */}

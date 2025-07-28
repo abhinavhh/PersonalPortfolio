@@ -21,7 +21,7 @@ const Navbar = () => {
     <motion.nav
       style={{ opacity: 1 }}
       className={`fixed top-0 w-full z-50 px-6 py-4 ${
-        isDarkMode ? "bg-gray-950/80 text-gray-400" : "bg-gray-50/80"
+        isDarkMode ? "bg-gray-850/80 text-gray-400" : "bg-gray-50/80"
       } backdrop-blur-md border-b ${
         isDarkMode ? "border-gray-800" : "border-gray-200"
       }`}
@@ -35,7 +35,7 @@ const Navbar = () => {
         {/* Dektop Navigation */}
 
         <div className="hidden md:flex space-x-8 items-center">
-          {["Home", "Skills", "Projects", "About", "Contact"].map((item) => (
+          {["Home", "About", "Projects", "Contact"].map((item) => (
             <motion.button
               key={item}
               whileHover={{ y: -2 }}
@@ -97,7 +97,7 @@ const Navbar = () => {
               isDarkMode? "bg-gray-900" : "bg-white"
             } border ${isDarkMode? "border-gray-800" : "border-gray-200"}`}
           >
-            {["Home", "Skills", "Work", "About", "Contact"].map((item) => (
+            {["Home", "About", "Project", "Contact"].map((item) => (
               <motion.button
                 key={item}
                 whileHover={{x : 5 }}
