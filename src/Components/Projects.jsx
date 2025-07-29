@@ -76,7 +76,7 @@ const Projects = () => {
       technologies: ["React", "Arduino IDE", "Spring Boot", "Tailwind CSS", "Framer Motion"],
       image: smartImg,
       demoUrl: "https://smart-irrigation-rho.vercel.app/home",
-      githubUrl: "https://github.com/abhinavhh/smart-irrigation",
+      githubUrl: "https://github.com/abhinavhh/smart_irrigation",
       date: "2024",
       status: "Completed",
       highlights: ["Real-time monitoring", "Remote control", "Data visualization", "Automated scheduling"]
