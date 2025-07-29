@@ -120,7 +120,7 @@ const Projects = () => {
       demoUrl: "https://demo-blog.com",
       githubUrl: "https://github.com/username/blog",
       date: "2023",
-      status: "Completed",
+      status: "In Progress",
       highlights: ["Rich text editor", "SEO optimized", "Comment system", "Content moderation"]
     }
   ];
