@@ -20,6 +20,7 @@ import { useTheme } from "../context/ThemeContext";
 import bhubimage from "../assets/Screenshot 2025-07-17 142406.png";
 import metroImage from "../assets/Screenshot 2025-07-23 173758.png";
 import todolistImage from "../assets/Screenshot 2025-07-28 115454.png"
+import smartImg from "../assets/Screenshot 2025-07-29 231144.png";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -68,17 +69,17 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      category: "frontend",
-      description: "A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      longDescription: "Modern weather application featuring current conditions, 7-day forecasts, weather maps, and historical data visualization. Includes location search and favorites.",
-      technologies: ["React", "Chart.js", "OpenWeather API", "Tailwind CSS", "Framer Motion"],
-      image: "/api/placeholder/600/400",
-      demoUrl: "https://demo-weather.com",
-      githubUrl: "https://github.com/username/weather",
-      date: "2023",
+      title: "IoT Enabled Smart Irrigation System",
+      category: "fullstack",
+      description: "A automate water controlling system for agriculture using ESP32 and Arduino with a web interface for monitoring and control.",
+      longDescription: "An IoT-enabled smart irrigation system that automates water control for agriculture. Features include real-time monitoring, remote control, and data visualization through a web interface.",
+      technologies: ["React", "Arduino IDE", "Spring Boot", "Tailwind CSS", "Framer Motion"],
+      image: smartImg,
+      demoUrl: "https://smart-irrigation-rho.vercel.app/home",
+      githubUrl: "https://github.com/abhinavhh/smart-irrigation",
+      date: "2024",
       status: "Completed",
-      highlights: ["Interactive maps", "Data visualization", "Location search", "Responsive design"]
+      highlights: ["Real-time monitoring", "Remote control", "Data visualization", "Automated scheduling"]
     },
     {
       id: 4,
