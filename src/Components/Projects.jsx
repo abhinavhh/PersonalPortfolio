@@ -21,6 +21,7 @@ import bhubimage from "../assets/Screenshot 2025-07-17 142406.png";
 import metroImage from "../assets/Screenshot 2025-07-23 173758.png";
 import todolistImage from "../assets/Screenshot 2025-07-28 115454.png"
 import smartImg from "../assets/Screenshot 2025-07-29 231144.png";
+import blogImg from "../assets/Screenshot 2025-08-03 125042.png"
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -115,10 +116,10 @@ const Projects = () => {
       category: "web",
       description: "A content management system for bloggers with rich text editing, comment system, and SEO optimization.",
       longDescription: "Complete blogging platform with rich text editor, category management, comment system, user authentication, and SEO optimization. Includes admin panel for content moderation.",
-      technologies: ["React", "Node.js", "MySQL", "TinyMCE", "Express", "Helmet"],
-      image: "/api/placeholder/600/400",
-      demoUrl: "https://demo-blog.com",
-      githubUrl: "https://github.com/username/blog",
+      technologies: ["React", "Node.js", "MongoDB", "Express"],
+      image: blogImg,
+      demoUrl: "https://byteblogs-two.vercel.app/",
+      githubUrl: "https://github.comabhinavhh/blog_app",
       date: "2023",
       status: "In Progress",
       highlights: ["Rich text editor", "SEO optimized", "Comment system", "Content moderation"]
