@@ -1,6 +1,17 @@
-// src/components/ui/Button/Button.jsx
+// src/components/ui/Button/Button.tsx
 import { motion } from 'framer-motion';
-import PropTypes from 'prop-types';
+import { ButtonHTMLAttributes, ReactNode } from 'react';
+
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'primary' | 'secondary' | 'ghost';
+  size?: 'sm' | 'md' | 'lg';
+  children: ReactNode;
+  icon?: ReactNode;
+  fullWidth?: boolean;
+  asLink?: boolean;
+  href?: string;
+  download?: string;
+}
 
 export const Button = ({
   variant = 'primary',
@@ -13,7 +24,7 @@ export const Button = ({
   download,
   className = '',
   ...props
-}) => {
+}: ButtonProps) => {
   const baseStyles = 'font-semibold rounded-full flex items-center justify-center space-x-2 transition-all';
   
   const variantStyles = {
@@ -61,16 +72,4 @@ export const Button = ({
       {content}
     </motion.button>
   );
-};
-
-Button.propTypes = {
-  variant: PropTypes.oneOf(['primary', 'secondary', 'ghost']),
-  size: PropTypes.oneOf(['sm', 'md', 'lg']),
-  children: PropTypes.node.isRequired,
-  icon: PropTypes.node,
-  fullWidth: PropTypes.bool,
-  asLink: PropTypes.bool,
-  href: PropTypes.string,
-  download: PropTypes.string,
-  className: PropTypes.string
 };
