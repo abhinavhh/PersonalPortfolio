@@ -1,8 +1,6 @@
-// src/pages/HomePage.tsx
 import { Navbar } from '../Components/common/Navigation/Navbar';
 import { HeroSection } from '@/features/hero';
-// Import other feature sections as you build them
-// import { AboutSection } from '@/features/about';
+import { AboutSection } from '@/features/about';
 // import { ProjectsSection } from '@/features/projects';
 // import { ContactSection } from '@/features/contact';
 
@@ -12,7 +10,7 @@ export const HomePage = () => {
       <Navbar />
       <main>
         <HeroSection />
-        {/* <AboutSection /> */}
+        <AboutSection />
         {/* <ProjectsSection /> */}
         {/* <ContactSection /> */}
       </main>
