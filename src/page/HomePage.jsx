@@ -1,5 +1,5 @@
 // src/pages/HomePage.tsx
-import { Navbar } from '@/components/common/Navigation/Navbar';
+import { Navbar } from '../Components/common/Navigation/Navbar';
 import { HeroSection } from '@/features/hero';
 // Import other feature sections as you build them
 // import { AboutSection } from '@/features/about';

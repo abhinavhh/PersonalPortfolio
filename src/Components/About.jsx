@@ -38,9 +38,9 @@ const About = () => {
     {
       category: "Database",
       technologies: [
-        { name: "PostgreSQL", level: 70, color: "from-blue-600 to-blue-700" },
+        { name: "PostgreSQL", level: 80, color: "from-blue-600 to-blue-700" },
         { name: "MongoDB", level: 75, color: "from-green-600 to-green-700" },
-        { name: "MySQL", level: 80, color: "from-blue-500 to-blue-600" }
+        { name: "MySQL", level: 40, color: "from-blue-500 to-blue-600" }
       ]
     }
   ];
