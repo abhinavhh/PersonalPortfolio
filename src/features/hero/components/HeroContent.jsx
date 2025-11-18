@@ -5,7 +5,7 @@ import { containerVariants, itemVariants } from '../../../lib/animations';
 import { TechStackGrid } from './TechStackGrid';
 import { RoleCarousel } from './RoleCarsoul';
 import { Button } from '../../../components/ui/Button/Button';
-import { SocialLinks } from '../../../components/ui/SocialLinks/SocialLinks';
+import { SocialLinks } from '../../../Components/ui/SocialLinks/SocialLinks.jsx';
 import PropTypes from 'prop-types';
 
 export const HeroContent = ({
