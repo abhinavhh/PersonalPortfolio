@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import { useTheme } from '../../../context/ThemeContext';
 import { useActiveTab } from '../hooks/useActiveTab';
-import { SectionHeader } from '../../../components/ui/SectionHeader/SectionHeader';
+import { SectionHeader } from '../../../components/ui/SectionHeader/SectionHeader.jsx';
 import { TabNavigation } from './TabNavigation';
 import { OverviewTab } from './OverviewTab';
 import { SkillsTab } from './SkilsTab';
