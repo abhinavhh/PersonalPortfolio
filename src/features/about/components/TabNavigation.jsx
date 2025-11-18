@@ -1,6 +1,6 @@
 // src/features/about/components/TabNavigation.jsx
 import { motion } from 'framer-motion';
-import { TabButton } from '../../../components/ui/TabButton/TabButton';
+import { TabButton } from '../../../Components/ui/TabButton/TabButton';
 import PropTypes from 'prop-types';
 
 export const TabNavigation = ({ tabs, activeTab, onTabChange, isDark = false }) => {

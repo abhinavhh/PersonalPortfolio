@@ -4,7 +4,7 @@ import { ChevronDown, Download, Mail } from 'lucide-react';
 import { containerVariants, itemVariants } from '../../../lib/animations';
 import { TechStackGrid } from './TechStackGrid';
 import { RoleCarousel } from './RoleCarsoul';
-import { Button } from '../../../components/ui/Button/Button.jsx';
+import { Button } from '../../../Components/ui/Button/Button.jsx';
 import { SocialLinks } from '../../../Components/ui/SocialLinks/SocialLinks.jsx';
 import PropTypes from 'prop-types';
 

@@ -1,6 +1,6 @@
 // src/features/about/components/SkillsTab.jsx
 import { motion } from 'framer-motion';
-import { ProgressBar } from '../../../components/ui/ProgressBar/ProgressBar';
+import { ProgressBar } from '../../../Components/ui/ProgressBar/ProgressBar';
 import { containerVariants, itemVariants } from '../../../lib/animations';
 import PropTypes from 'prop-types';
 
