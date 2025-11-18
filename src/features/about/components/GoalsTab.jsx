@@ -1,6 +1,6 @@
 // src/features/about/components/GoalsTab.jsx
 import { motion } from 'framer-motion';
-import { Card } from '../../../components/ui/Card/Card';
+import { Card } from '../../../Components/ui/Card/Card';
 import { containerVariants, itemVariants } from '../../../lib/animations';
 import PropTypes from 'prop-types';
 
